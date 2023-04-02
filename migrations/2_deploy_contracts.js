@@ -1,4 +1,4 @@
-const Flashswap = artifacts.require("Flashswap");
+const Flashswap = artifacts.require("FlashLoan");
 
 module.exports = function (deployer) {
   deployer.deploy(Flashswap);

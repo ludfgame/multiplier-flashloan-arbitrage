@@ -77,6 +77,14 @@ module.exports = {
       network_id: 56
     },
 
+    testnet: {
+      provider: () => new HDWalletProvider(
+        process.env.PRIVATE_KEY,
+        process.env.BSC_HTTPS
+      ),
+      network_id: 97
+    },
+
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
